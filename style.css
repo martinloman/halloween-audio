@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+body {
+  background-image: url("house.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: orange
+}
+
+h1 {
+  font-family: 'Fruktur', cursive; 
+  font-size: 10em;
+  font-weight: 700;
+  text-align: center;
+  text-shadow:2px 2px  black;
+}
+
+.centerer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  
+}
+.fa-ghost {
+  color: grey;
+}
