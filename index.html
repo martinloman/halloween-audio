@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>Halloween</h1>
-    <audio loop>
+    <audio id="thunder" loop>
       <source src="Thunder-Mike_Koenig.mp3" type="audio/mpeg" />
     </audio>
     <audio loop>
@@ -27,7 +27,8 @@
   </body>
   <script>
     function play_audio() {
-      alert("Hej");
+      audioElement = document.getElementById("thunder");
+      audioElement.play();
     }
   </script>
 </html>
