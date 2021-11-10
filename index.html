@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>Halloween</h1>
-    <audio autoplay loop>
+    <audio loop>
       <source src="Thunder-Mike_Koenig.mp3" type="audio/mpeg" />
     </audio>
     <audio loop>
@@ -22,7 +22,12 @@
 
     <div class="centerer">
       <i class="fas fa-spider fa-5x fa-spin"></i>
-      <i class="fas fa-ghost fa-5x fa-spin"></i>
+      <i class="fas fa-ghost fa-5x fa-spin" onclick="play_audio()"></i>
     </div>
   </body>
+  <script>
+    function play_audio() {
+      alert("Hej");
+    }
+  </script>
 </html>
