@@ -16,19 +16,28 @@
     <audio id="thunder" loop>
       <source src="Thunder-Mike_Koenig.mp3" type="audio/mpeg" />
     </audio>
-    <audio loop>
+    <audio id="laugh" loop>
       <source src="Evil_Laugh_Male.mp3" type="audio/mpeg" />
     </audio>
 
     <div class="centerer">
-      <i class="fas fa-spider fa-5x fa-spin"></i>
-      <i class="fas fa-ghost fa-5x fa-spin" onclick="playAudio()"></i>
+      <i
+        class="fas fa-spider fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('laugh'))"
+      ></i>
+      <i
+        class="fas fa-ghost fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('thunder'))"
+      ></i>
     </div>
   </body>
   <script>
-    function playAudio() {
-      audioElement = document.getElementById("thunder");
-      audioElement.play();
+    function toggleAudio(audioElement) {
+      if (audioElement.paused) {
+        audioElement.play()
+      } else {
+        audioElement.pause()
+      }
     }
   </script>
 </html>
